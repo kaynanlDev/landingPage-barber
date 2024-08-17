@@ -10,10 +10,18 @@
 .flex-center{ display: flex; align-items: center; justify-content: center;}
 .border{border: 1px solid red;}
 
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    @include responsivi(640px){
+        flex-direction: column;
+    }
+}
 .hero{
     position: relative;
     width: 100%;
-    height: 100vh;
+    
 
     &::before{
         content: '';
@@ -70,8 +78,8 @@ header{
                     color: $yellow
                 }
             }
-
             .btn{
+                text-decoration: none;
                 padding: 8px 24px;
                 border-radius: 8px;
                 background-image: linear-gradient(to bottom, $yellow, $yellow-d);
@@ -80,7 +88,7 @@ header{
                 transition: 0.3s ease;
                 &:hover{
                     opacity: 0.8;
-                    color: black;
+                    color: $black;
                 }
             }
         }
@@ -154,7 +162,7 @@ header{
 
             .btn{
                 padding: 8px 24px;
-                border-radius: 8px;
+                border-radius: 4px;
                 background-image: linear-gradient(to bottom, $yellow, $yellow-d);
                 color: $black;
                 font-weight: 700;
@@ -170,5 +178,44 @@ header{
     }
     .active{
         display: block;
+    }
+}
+
+.hero-container{
+    padding-top: 48px;
+    height: 80vh;
+    .hero-text{
+        flex-grow: 2;
+        flex-basis: 350px;
+        z-index: 999;
+        margin-left: 16px;
+        span{
+            color: $yellow;
+        }
+        h1{
+            max-width: 90%;
+        }
+        p{
+            max-width: 70%;
+        }
+        .local{
+            
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+    .hero-img{
+        width: 100%;
+        flex-grow: 1;
+        flex-basis: 350px;
+        z-index: 999;
+        margin-top: -64px;
+        margin-right: 16px;
+        
+        img{
+            width: 110%;
+            height: 120%;
+            filter: saturate(0%);
+        }
     }
 }
