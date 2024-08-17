@@ -147,6 +147,7 @@ header .menu-mobile {
   height: 100vh;
   background-color: #0f0f0f;
   padding-top: 100px;
+  z-index: 999;
 }
 header .menu-mobile .close {
   position: absolute;
@@ -200,7 +201,7 @@ header .active {
 .hero-container .hero-text {
   flex-grow: 2;
   flex-basis: 350px;
-  z-index: 999;
+  z-index: 200;
   margin-left: 16px;
 }
 .hero-container .hero-text span {
@@ -225,7 +226,7 @@ header .active {
   width: 100%;
   flex-grow: 1;
   flex-basis: 350px;
-  z-index: 999;
+  z-index: 200;
 }
 .hero-container .hero-img img {
   width: 110%;

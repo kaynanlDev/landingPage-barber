@@ -128,7 +128,8 @@ header{
         height: 100vh;
         background-color: $black-d;
         padding-top: 100px;
-    
+        z-index: 999;
+
         .close{
             position: absolute;
             top: 32px; right: 32px;
@@ -187,7 +188,7 @@ header{
     .hero-text{
         flex-grow: 2;
         flex-basis: 350px;
-        z-index: 999;
+        z-index: 200;
         margin-left: 16px;
         span{
             color: $yellow;
@@ -212,7 +213,7 @@ header{
         width: 100%;
         flex-grow: 1;
         flex-basis: 350px;
-        z-index: 999;
+        z-index: 200;
         
         
         img{
