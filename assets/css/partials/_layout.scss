@@ -232,3 +232,31 @@ header{
         margin-right: 0;
     }
 }
+
+.sobre{
+    padding-top: 192px;
+
+    p{
+        max-width: 70%;
+    }
+    .sobre-img{
+        position: relative;
+        width: 100%;
+        height: 600px;
+        img{
+            width: 100%;height: 100%;
+        }
+    }
+    
+    
+    @include responsivi(640px){
+        padding-top: 300px;
+        gap: 40px;
+
+        .sobre-img{
+            margin: 0 auto;
+            width: 80%;
+            height: 350px;
+        }
+    }
+}

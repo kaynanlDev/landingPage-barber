@@ -13,9 +13,10 @@ h1{
     }
 }
 h2{
+    color: $yellow;
     font-size: 2rem;
-    font-weight: 500;
-    color: white;
+    font-weight: 600;
+    
     @include responsivi(640px){
         font-size: 1.5rem;
     }
@@ -24,6 +25,7 @@ h3{
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
+
     @include responsivi(640px){
         font-size: 1rem;
     }
@@ -32,6 +34,8 @@ h4{
     font-size: 1rem;
     font-weight: 500;
     color: white;
+    text-transform: uppercase;
+
     @include responsivi(640px){
         font-size: 1rem;
     }
@@ -41,6 +45,7 @@ p{
     font-size: 1rem;
     font-weight: 500;
     color: $gray-l;
+    
     @include responsivi(640px){
         font-size: 1rem;
     }

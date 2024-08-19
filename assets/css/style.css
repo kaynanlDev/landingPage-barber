@@ -245,6 +245,33 @@ header .active {
   }
 }
 
+.sobre {
+  padding-top: 192px;
+}
+.sobre p {
+  max-width: 70%;
+}
+.sobre .sobre-img {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.sobre .sobre-img img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  .sobre {
+    padding-top: 300px;
+    gap: 40px;
+  }
+  .sobre .sobre-img {
+    margin: 0 auto;
+    width: 80%;
+    height: 350px;
+  }
+}
+
 .m-1 {
   margin: 0.5rem;
 } /* 8px */
@@ -468,9 +495,9 @@ h1 {
 }
 
 h2 {
+  color: #FED700;
   font-size: 2rem;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
 }
 @media screen and (max-width: 640px) {
   h2 {
@@ -493,6 +520,7 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   color: white;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 640px) {
   h4 {
